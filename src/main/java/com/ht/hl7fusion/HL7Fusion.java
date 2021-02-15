@@ -148,19 +148,19 @@ public class HL7Fusion {
                 DDJ=calculate_DDJ();
                 NUMMSG=Long.toString(System.currentTimeMillis(),10);
                 
-                IPPESC=row[1];
-                IPPMAITRE=row[2];
-                NOMNAIS=row[3];                
-                NOMUSG=row[4];
-                PRN=row[5];
-                DDN=row[6];
-                SEX=row[7];                
-                TIT=row[8];
-                TEL=row[9];
-                MAIL=row[10];
-                ADR=row[11];
-                CP=row[12];
-                VILLE=row[13];
+                IPPESC=row[1].trim();
+                IPPMAITRE=row[2].trim();
+                NOMNAIS=row[3].trim();                
+                NOMUSG=row[4].trim();
+                PRN=row[5].trim();
+                DDN=row[6].trim();
+                SEX=row[7].trim();                
+                TIT=row[8].trim();
+                TEL=row[9].trim();
+                MAIL=row[10].trim();
+                ADR=row[11].trim();
+                CP=row[12].trim();
+                VILLE=row[13].trim();
     }
     
     /*******************************
