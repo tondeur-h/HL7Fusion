@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/********************
+/****************************************************************
  * Générateur de fichier de fusion d'identité
  * compatible avec la GAM Maincare 
  * Ce système se base sur une extraction de la base de donnée
@@ -39,7 +39,7 @@ import java.util.logging.Logger;
  * from pa_pat where pat_imr is not null and ETC_PER_DEB<TO_DATE('01/07/2020','DD/MM/YYYY') order by etc_per_deb;
  * 
  * @author tondeur-h
- ********************/
+ ****************************************************************/
 public class HL7Fusion {
     
     String DDJ;
