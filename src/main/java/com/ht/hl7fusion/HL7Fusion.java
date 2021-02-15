@@ -38,6 +38,13 @@ import java.util.logging.Logger;
  * ADR_ADR_001_NOM_VIL 
  * from pa_pat where pat_imr is not null and ETC_PER_DEB<TO_DATE('01/07/2020','DD/MM/YYYY') order by etc_per_deb;
  * 
+ * 
+ * Appel par numero IPP
+ * select pat_ipp,etc_nom,ETC_NOM_MAR,etc_prn,to_char(ETC_DDN,'YYYYMMDD') || '000000', 
+ * ETC_SEX, ETC_TIT, ADR_NUM_TEL_001,ADR_EMAIL_001, TRIM(SUBSTR(ADR_ADR_001_CON,0,70)), 
+ * ADR_ADR_001_COD_POS, ADR_ADR_001_NOM_VIL 
+ * from pa_pat where pat_ipp='000000000';
+ * 
  * @author tondeur-h
  ****************************************************************/
 public class HL7Fusion {
